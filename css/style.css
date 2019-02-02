@@ -1,0 +1,523 @@
+body {
+	font-size: 14px;
+    color: #333;
+    background-color: #fff;
+    letter-spacing: 1px;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 3;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.slides-navigation {
+	z-index: 6;
+}
+
+.slides-navigation .prev,
+.slides-navigation .next {
+	width: 47px;
+	height: 47px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev {
+	left: 20px;
+	background-image: url(../img/icons/prev.png);
+}
+
+.slides-navigation a.next {
+	right: 20px;
+	background-image: url(../img/icons/next.png);
+}
+
+.titleMessage {
+	position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 50%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -125px;
+}
+
+.titleMessage .heading p {
+	color: #fff;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 100;
+    letter-spacing: 7px;
+}
+
+.titleMessage .heading .main {
+	font-size: 50px;
+}
+
+.titleMessage .heading .sub {
+	font-size: 23px;
+}
+
+.section {
+	padding: 100px 0;
+}
+
+.aboutImage {
+	max-width: 100%;
+}
+
+.skillsSection,
+.contactSection {
+	background-color: #e74c3c;
+	color: #fff;
+}
+
+.skill {
+	text-align: center;
+	margin-left: 10px;
+}
+
+.chart {
+	position: relative;
+    width: 152px;
+    height: 152px;
+    display: inline-block;
+    text-align: center;
+}
+
+.chart canvas {
+	position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chart .percent {
+	color: #000;
+    line-height: 152px;
+    display: inline-block;
+    font-size: 35px;
+}
+
+.chart .percent:after {
+	content: '%';
+}
+
+
+.squareItem {
+	margin-top: 30px;
+    position: relative;
+}
+
+.squareInnerContainer {
+	position: relative;
+	padding: 50px 15px 35px;
+	text-align: center;
+	border: 2px solid #444;
+	border-top: none;
+}
+
+.squareInnerContainer:before,
+.squareInnerContainer:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	width: 30%;
+	border-bottom: 2px solid #444;
+}
+
+
+.squareInnerContainer:before {
+	right: 0px;
+}
+
+.squareInnerContainer:after {
+	left: 0px
+}
+
+
+.squareContent h2 {
+	font-size: 56px;
+	margin-bottom: 10px;
+	font-weight: 400;
+	color: #e74c3c;
+}
+
+.squareContent h3 {
+	font-size: 13px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.squareIcon {
+	position: absolute;
+    left: 50%;
+    top: -30px;
+    width: 40%;
+    height: 60px;
+    font-size: 45px;
+    margin-left: -20%;
+    color: #444;
+}
+
+.contactButton {
+	color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+
+.contactButton:hover {
+	text-decoration: none;
+	color: #e74c3c;
+	background-color: #fff;
+}
+
+.filter a {
+	color: #bdc3c7;
+	border: 1px solid #bdc3c7;
+	padding: 10px 18px;
+	display: block;
+}
+
+.filter li {
+	display: inline-block;
+	padding: 5px
+}
+
+.filter .current {
+	background-color: #e74c3c;;
+	border-color: #e74c3c;
+	color: #fff;
+}
+
+.filter {
+	text-align: center;
+	width: 100%;
+}
+
+.section .heading {
+	text-align: center;
+	padding-bottom: 40px;
+	width: 100%;
+}
+
+.items li {
+	display: inline-block;
+	padding: 5px;
+}
+
+.itemsContainer {
+	width: 100%;
+}
+
+
+.items li img {
+	width: 100%;
+	-webkit-transition: all 0.2s linear, 1s;
+    -moz-transition: all 0.2s linear, 1s;
+    -o-transition: all 0.2s linear, 1s;
+    -ms-transition: all 0.2s linear, 1s;
+    -transition: all 0.2s linear, 1s;
+}
+
+.items .item {
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+
+.items .icons {
+	position: absolute;
+    width: 90px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    margin: -20px auto 0 -47px;
+    text-align: center;
+    z-index: 3;
+}
+
+.items .icons i {
+	color: #fff;
+    font-size: 20px;
+    margin-top: 9px;
+}
+
+.items a {
+	width: 40px;
+    height: 40px;
+    background-color: #e74c3c;
+    position: relative;
+    display: inline-block;
+
+
+    -webkit-transition: all 0.2s linear, 0.2s;
+    -moz-transition: all 0.2s linear, 0.2s;
+    -o-transition: all 0.2s linear, 0.2s;
+    -ms-transition: all 0.2s linear, 0.2s;
+    -transition: all 0.2s linear, 0.2s;
+
+}
+
+.items .imageOverlay {
+	width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+
+    -webkit-transition: all 0.2s linear, 1s;
+    -moz-transition: all 0.2s linear, 1s;
+    -o-transition: all 0.2s linear, 1s;
+    -ms-transition: all 0.2s linear, 1s;
+    -transition: all 0.2s linear, 1s;
+}
+
+.items .item:hover .imageOverlay {
+	opacity: 1;
+}
+
+.items .openButton {
+	float: left;
+	left: -200px;
+}
+
+.items .projectLink {
+	float: right;
+	right: -200px;
+}
+
+.items .item:hover .openButton {
+	left: 0px;
+}
+
+.items .item:hover .projectLink {
+	right: 0px;
+}
+
+.items .item:hover img {
+	-webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -transform: scale(1.05, 1.05);
+}
+
+.items {
+	padding: 0;
+}
+
+.copyrightSection {
+	background-color: #000;
+	color: #fff;
+	padding: 30px 5px;
+}
+
+.copyrightSection p {
+	margin: 0;
+}
+
+#navigation {
+	background-color: #e74c3c;
+    padding: 20px 10px;
+    z-index: 100;
+    width: 100%;
+}
+
+#navigation li {
+	padding: 0 10px;
+}
+
+#navigation li a {
+	color: #fff;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+	color: #fff;
+}
+
+.navbar-toggler-icon {
+	background: url(../img/icons/menu.png);
+	background-size: 100%;
+}
+
+.fixedNav #navigation {
+	position: fixed;
+	top: 0;
+}
+
+//
+// Modals
+// --------------------------------------------------
+
+// .modal-open      - body class for killing the scroll
+// .modal           - container to scroll within
+// .modal-dialog    - positioning shell for the actual modal
+// .modal-content   - actual modal w/ bg and corners and shit
+
+// Kill the scroll on the body
+.modal-open {
+  overflow: hidden;
+}
+
+// Container that the modal scrolls within
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: @zindex-modal;
+  -webkit-overflow-scrolling: touch;
+
+  // Prevent Chrome on Windows from adding a focus outline. For details, see
+  // https://github.com/twbs/bootstrap/pull/10951.
+  outline: 0;
+
+  // When fading in the modal, animate it to slide down
+  &.fade .modal-dialog {
+    .translate(0, -25%);
+    .transition-transform(~"0.3s ease-out");
+  }
+  &.in .modal-dialog { .translate(0, 0) }
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+// Actual modal
+.modal-content {
+  position: relative;
+  background-color: @modal-content-bg;
+  border: 1px solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
+  border: 1px solid @modal-content-border-color;
+  border-radius: @border-radius-large;
+  .box-shadow(0 3px 9px rgba(0,0,0,.5));
+  background-clip: padding-box;
+  // Remove focus outline from opened modal
+  outline: 0;
+}
+
+// Modal background
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: @zindex-modal-background;
+  background-color: @modal-backdrop-bg;
+  // Fade for backdrop
+  &.fade { .opacity(0); }
+  &.in { .opacity(@modal-backdrop-opacity); }
+}
+
+// Modal header
+// Top section of the modal w/ title and dismiss
+.modal-header {
+  padding: @modal-title-padding;
+  border-bottom: 1px solid @modal-header-border-color;
+  &:extend(.clearfix all);
+}
+// Close icon
+.modal-header .close {
+  margin-top: -2px;
+}
+
+// Title text within header
+.modal-title {
+  margin: 0;
+  line-height: @modal-title-line-height;
+}
+
+// Modal body
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+.modal-body {
+  position: relative;
+  padding: @modal-inner-padding;
+}
+
+// Footer (for actions)
+.modal-footer {
+  padding: @modal-inner-padding;
+  text-align: right; // right align buttons
+  border-top: 1px solid @modal-footer-border-color;
+  &:extend(.clearfix all); // clear it in case folks use .pull-* classes on buttons
+
+  // Properly space out buttons
+  .btn + .btn {
+    margin-left: 5px;
+    margin-bottom: 0; // account for input[type="submit"] which gets the bottom margin like all other inputs
+  }
+  // but override that for button groups
+  .btn-group .btn + .btn {
+    margin-left: -1px;
+  }
+  // and override it for block buttons as well
+  .btn-block + .btn-block {
+    margin-left: 0;
+  }
+}
+
+// Measure scrollbar width for padding body during modal show/hide
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+// Scale up the modal
+@media (min-width: @screen-sm-min) {
+  // Automatically set modal's width for larger viewports
+  .modal-dialog {
+    width: @modal-md;
+    margin: 30px auto;
+  }
+  .modal-content {
+    .box-shadow(0 5px 15px rgba(0,0,0,.5));
+  }
+
+  // Modal sizes
+  .modal-sm { width: @modal-sm; }
+}
+
+@media (min-width: @screen-md-min) {
+  .modal-lg { width: @modal-lg; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
